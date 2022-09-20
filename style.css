@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+header {
+  position: sticky;
+  width: 100%;
+  background-color: rgba(38, 38, 38, 0.9);
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-link {
+  font-size: 2rem;
+  color: #ff0055;
+}
+
+.nav-link:hover {
+  color: #f85da0;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.4s ease-in-out;
+  background-color: #f5deb3;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #f5deb3;
+  text-decoration: none;
+}
+
+/* Articles */
+
+main {
+  min-height: 100%;
+  background-color: rgba(38, 38, 38, 0.9);
+}
+
+article h1 {
+  color: #b2dca9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+article h3 {
+  color: #f5deb3;
+  margin: 10px 10px;
+  padding: 40px;
+}
+
+article td tr {
+  color: #f5f5dc;
+}
+
+body {
+  height: 100vh;
+  background-image: url(/add/mac.png);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+/* Social */
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2em;
+    right: 100%;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background-color: #262626;
+    width: 100%;
+    transition: all 0.3s ease;
+  }
+
+  .active {
+    right: 0;
+  }
+}
