@@ -95,6 +95,15 @@ body {
 
 /* Social */
 
+.social {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgba(236, 154, 13, 0.1);
+}
 
 @media (max-width: 768px) {
   .hamburger {
