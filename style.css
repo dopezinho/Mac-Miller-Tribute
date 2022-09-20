@@ -90,7 +90,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: #000;
+  background-color: #262626;
 }
 
 /* Social */
@@ -132,7 +132,7 @@ body {
     top: 0;
     bottom: 0;
     height: 100vh;
-    background-color: #262626;
+    background-color: rgb(38, 38, 38, 0.9);
     width: 100%;
     transition: all 0.3s ease;
   }
