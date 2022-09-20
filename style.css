@@ -85,7 +85,7 @@ article td tr {
 
 body {
   height: 100vh;
-  background-image: url(./add/mac.png);
+  background-image: url(../home/add/mac.png);
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
